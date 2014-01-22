@@ -1,8 +1,8 @@
 # lodash-worker-browserify-webpack
 
-This repo is to show how current lodash errors if it is packaged with browserify or webpack and then used in a web worker.
+This repo is to show how lodash 2.4.1 errors if it is packaged with browserify or webpack and then used in a web worker.
 
-The value to test for when attempting to dynamically discover is the global context in a browser environment is `self`. `window` is available in the main browser environment, but `self` is available in both the normal and worker environment.
+The value to test when attempting to dynamically discover what the global context is in a browser environment is `self`. `window` is available in the main browser environment, but `self` is available in both the normal and worker environment. For extra insurance you can check both.
 
 This repo includes a custom version of lodash making the following change to support packaging as a webworker.
 
@@ -26,3 +26,5 @@ This repo includes a custom version of lodash making the following change to sup
 npm install
 npm test
 ```
+
+You should see half the tests fail.
