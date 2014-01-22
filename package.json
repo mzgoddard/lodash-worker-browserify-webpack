@@ -1,0 +1,21 @@
+{
+  "name": "browserify-lodash-worker",
+  "version": "0.0.0",
+  "description": "Example browserify/webpack lodash build in a webworker.",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "author": "Michael \"Z\" Goddard",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "~1.8.1",
+    "grunt": "~0.4.2",
+    "grunt-browserify": "~1.3.0",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-testem": "~0.5.1",
+    "grunt-webpack": "~1.0.3",
+    "jshint": "~2.4.2",
+    "lodash": "~2.4.1",
+    "mocha": "~1.17.0"
+  }
+}

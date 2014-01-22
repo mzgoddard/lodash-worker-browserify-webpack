@@ -1,0 +1,36 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mocha Tests</title>
+  <link rel="stylesheet" href="/node_modules/mocha/mocha.css" />
+</head>
+<body>
+  <div id="mocha"></div>
+  <script src="/node_modules/chai/chai.js"></script>
+  <script src="/node_modules/mocha/mocha.js"></script>
+  <script src="/testem.js"></script>
+  <!-- Test with built diskette file. -->
+  <script>mocha.setup('bdd')</script>
+  <script>
+    var buildType = 'normal-webpack';
+  </script>
+  <script src="build/normal-webpack/client.js"></script>
+  <script>
+    var buildType = 'normal-browserify';
+  </script>
+  <script src="build/normal-browserify/client.js"></script>
+  <script>
+    var buildType = 'custom-webpack';
+  </script>
+  <script src="build/custom-webpack/client.js"></script>
+  <script>
+    var buildType = 'custom-browserify';
+  </script>
+  <script src="build/custom-browserify/client.js"></script>
+  <script>
+    mocha.checkLeaks();
+    mocha.globals([]);
+    mocha.run();
+  </script>
+</body>
+</html>

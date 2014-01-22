@@ -1,0 +1,10 @@
+{
+  "framework": "mochi",
+  "src_files": [ "*.js" ],
+  "serve_files": [
+    "build/*"
+  ],
+  "test_page": "index.html",
+  "before_tests": "grunt",
+  "launch_in_dev": [ "chrome" ]
+}
